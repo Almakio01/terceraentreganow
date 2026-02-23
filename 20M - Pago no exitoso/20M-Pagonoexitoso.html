@@ -118,7 +118,7 @@
                           color: #000;
                           font-family: Montserrat, sans-serif;
                           font-weight: 300;
-                          font-size: 12px;
+                          font-size: 20px;
                           line-height: 22px;
                           margin-top: 0;
                           margin-bottom: 0;
@@ -135,15 +135,85 @@
                         >
                       </p>
                     </center>
+                    <table
+                      style="
+                        margin: 5px auto 45px;
+                        font-family: 'Montserrat';
+                        overflow: hidden;
+                        margin-top: 50px;
+                        width: 90%;
+                      "
+                    >
+                      <thead>
+                        <tr>
+                          <th
+                            style="
+                              background-color: #a40133;
+                              color: white;
+                              padding: 12px 8px;
+                              text-align: center;
+                              border-right: 3px solid #ffffff;
+                              font-size: 12px;
+                              width: 145px;
+                            "
+                          >
+                            Fecha de pago
+                          </th>
+                          <th
+                            style="
+                              background-color: #a40133;
+                              color: white;
+                              padding: 12px 8px;
+                              text-align: center;
+                              font-size: 12px;
+                              width: 145px;
+                            "
+                          >
+                            Monto del pago
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td
+                            style="
+                              background-color: #ededed;
+                              color: #000000;
+                              padding: 12px 8px;
+                              text-align: center;
+                              border: none;
+                              font-size: 15px;
+                              border-top: 5px solid #ffffff;
+                              border-right: 3px solid #ffffff;
+                            "
+                          >
+                            ${fechaPago}
+                          </td>
+                          <td
+                            style="
+                              background-color: #ededed;
+                              color: #000000;
+                              padding: 12px 8px;
+                              text-align: center;
+                              border: none;
+                              font-size: 15px;
+                              border-top: 5px solid #ffffff;
+                            "
+                          >
+                            ${monto}
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </td>
                 </tr>
 
                 <tr>
                   <td width="612" style="display: block">
                     <img
-                      src="body1.png"
+                      src="Body.png"
                       width="612"
-                      height="77"
+                      height="496"
                       border="0"
                       style="
                         display: block;
@@ -154,84 +224,6 @@
                     />
                   </td>
                 </tr>
-                <tr>
-                  <td width="612" bgcolor="#ffffff">
-                    <table
-                      align="center"
-                      border="0"
-                      cellpadding="0"
-                      cellspacing="0"
-                      width="612"
-                      bgcolor="#ffffff"
-                    >
-                      <tr>
-                        <td width="164">
-                          <img
-                            src="izqui.png"
-                            width="164"
-                            height="53"
-                            border="0"
-                            style="
-                              display: block;
-                              margin-top: 0;
-                              margin-bottom: 0;
-                              text-align: center;
-                            "
-                          />
-                        </td>
-                        <td width="446">
-                          <p
-                            style="
-                              color: #2a2a2a;
-                              font-family: Montserrat, sans-serif;
-                              font-weight: 300;
-                              font-size: 10px;
-                              line-height: 22px;
-                              text-align: left;
-                              margin-top: 0;
-                              margin-bottom: 0;
-                              margin-left: 0;
-                              margin-right: 0;
-                            "
-                          >
-                            Fecha de pago:
-                            <span style="color: #a40233">${fechaPago}</span>.
-                            <br />Monto:
-                            <span style="color: #a40233">${monto}</span>.
-                          </p>
-                        </td>
-                        <td width="164">
-                          <img
-                            src="derech.png"
-                            width="164"
-                            height="53"
-                            border="0"
-                            style="
-                              display: block;
-                              margin-top: 0;
-                              margin-bottom: 0;
-                              text-align: center;
-                            "
-                          />
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-                <td width="612" style="display: block">
-                  <img
-                    src="body2.png"
-                    width="612"
-                    height="177"
-                    border="0"
-                    style="
-                      display: block;
-                      margin-bottom: 0px;
-                      text-align: center;
-                    "
-                    alt="Mailing Image"
-                  />
-                </td>
               </table>
             </td>
 
@@ -434,26 +426,6 @@
                   </td>
                 </tr>
               </table>
-            </td>
-          </tr>
-          <tr>
-            <td width="612" height="40">
-              <p
-                style="
-                  font-size: 10px;
-                  color: #383838;
-                  font-family: Montserrat, sans-serif;
-                  text-align: justify;
-                  margin-top: 19px;
-                  margin-bottom: 19px;
-                  margin-left: 30px;
-                "
-              >
-                <b
-                  >Tarjeta emitida por Banco INVEX S.A., Institución de Banca
-                  Múltiple, INVEX Grupo Financiero.</b
-                >
-              </p>
             </td>
           </tr>
         </tbody>
