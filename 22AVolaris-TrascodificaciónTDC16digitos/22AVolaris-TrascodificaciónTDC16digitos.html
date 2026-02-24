@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
   <head>
-    <title>22A Volaris - Trascodificación TDC 16 digitos</title>
+    <title>20M - Pago no exitoso</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -79,6 +79,16 @@
                             ${name}</small
                           >
                         </td>
+                        <td
+                          align="right"
+                          style="
+                            font-size: 14px;
+                            color: #383838;
+                            font-family: Montserrat, sans-serif;
+                          "
+                        >
+                          <small>${date}</small>
+                        </td>
                       </tr>
                     </table>
                   </td>
@@ -105,22 +115,96 @@
                     <center>
                       <p
                         style="
-                          font-size: 18px;
-                          font-family: Montserrat;
                           color: #000;
+                          font-family: Montserrat, sans-serif;
+                          font-weight: 300;
+                          font-size: 20px;
+                          line-height: 22px;
+                          margin-top: 0;
+                          margin-bottom: 0;
+                          margin-left: 0;
+                          margin-right: 0;
                         "
                       >
-                        Hemos recibido tu solicitud. Por tu seguridad, <br />
-                        tu
-                        <strong style="color: #b17d51"
-                          >Tarjeta de Crédito ${product}</strong
+                        Te informamos que el pago de tu <br />
+                        <strong style="color: #a12885; font-weight: 750"
+                          >Tarjeta de Crédito INVEX</strong
                         >
-                        <br />
-                        terminación
-                        <strong style="color: #b17d51">${acct_term}</strong> ha
-                        sido bloqueada.
+                        <strong style="color: #000; font-weight: 750"
+                          >terminación ${terminacion}</strong
+                        >
                       </p>
                     </center>
+                    <table
+                      style="
+                        margin: 5px auto 45px;
+                        font-family: 'Montserrat';
+                        overflow: hidden;
+                        margin-top: 50px;
+                        width: 90%;
+                      "
+                    >
+                      <thead>
+                        <tr>
+                          <th
+                            style="
+                              background-color: #a12885;
+                              color: white;
+                              padding: 12px 8px;
+                              text-align: center;
+                              border-right: 3px solid #ffffff;
+                              font-size: 12px;
+                              width: 145px;
+                            "
+                          >
+                            Fecha de pago
+                          </th>
+                          <th
+                            style="
+                              background-color: #a12885;
+                              color: white;
+                              padding: 12px 8px;
+                              text-align: center;
+                              font-size: 12px;
+                              width: 145px;
+                            "
+                          >
+                            Monto del pago
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td
+                            style="
+                              background-color: #ededed;
+                              color: #000000;
+                              padding: 12px 8px;
+                              text-align: center;
+                              border: none;
+                              font-size: 15px;
+                              border-top: 5px solid #ffffff;
+                              border-right: 3px solid #ffffff;
+                            "
+                          >
+                            ${fechaPago}
+                          </td>
+                          <td
+                            style="
+                              background-color: #ededed;
+                              color: #000000;
+                              padding: 12px 8px;
+                              text-align: center;
+                              border: none;
+                              font-size: 15px;
+                              border-top: 5px solid #ffffff;
+                            "
+                          >
+                            ${monto}
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </td>
                 </tr>
 
