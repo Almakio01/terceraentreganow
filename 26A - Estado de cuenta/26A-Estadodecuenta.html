@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
   <head>
-    <title>22A - Trascodificación TDC 16 digitos</title>
+    <title>26A - Estado de cuenta</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -76,8 +76,18 @@
                             ><span style="color: #383838; font-weight: 600"
                               >Apreciable:</span
                             >
-                            ${custName}</small
+                            ${name}</small
                           >
+                        </td>
+                         <td
+                          align="right"
+                          style="
+                            font-size: 14px;
+                            color: #383838;
+                            font-family: Montserrat, sans-serif;
+                          "
+                        >
+                          <small>${date}</small>
                         </td>
                       </tr>
                     </table>
@@ -86,9 +96,9 @@
                 <tr>
                   <td width="612" style="display: block">
                     <img
-                      src="Principal.png"
+                      src="Header copy.png"
                       width="612"
-                      height="338"
+                      height="378"
                       border="0"
                       style="
                         display: block;
@@ -110,10 +120,7 @@
                           color: #000;
                         "
                       >
-                        Hemos recibido tu solicitud. Por tu seguridad, <br />
-                        tu <strong style="color: #B17D51;">Tarjeta de Crédito ${product}</strong> <br />
-                        terminación <strong style="color: #B17D51;">${acct_term}</strong> ha sido
-                        bloqueada.
+                      Te mandamos tu <strong>Estado de Cuenta</strong> <br> del mes de ${period}.
                       </p>
                     </center>
                   </td>
@@ -128,7 +135,7 @@
                     <img
                       src="Body.png"
                       width="612"
-                      height="432"
+                      height="478"
                       border="0"
                       style="
                         display: block;
